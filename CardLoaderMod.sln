@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAScryption", "PAScryption.csproj", "{FC390D63-F31B-4B96-9A0B-CF59C89AEEF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC390D63-F31B-4B96-9A0B-CF59C89AEEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC390D63-F31B-4B96-9A0B-CF59C89AEEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC390D63-F31B-4B96-9A0B-CF59C89AEEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC390D63-F31B-4B96-9A0B-CF59C89AEEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19E68952-53B7-45FB-8D5B-BBCE12F2FEE1}
+	EndGlobalSection
+EndGlobal

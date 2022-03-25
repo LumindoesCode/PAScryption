@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>PAScryption</AssemblyName>
+    <Description>Inscryption but Project Arrhythmia characters as cards</Description>
+    <Version>0.5.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>9.0</LangVersion>
+    <Authors>Luminescence</Authors>
+    <Company />
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="Inscryption.GameLibs" Version="1.9.0-r.0" />
+    <PackageReference Include="UnityEngine.Modules" Version="2019.4.24" IncludeAssets="compile" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Infiniscryption.PackManager">
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\kaycee\BepInEx\plugins\Infiniscryption-Pack_Management_API\Infiniscryption.PackManager.dll</HintPath>
+    </Reference>
+    <Reference Include="InscryptionAPI">
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\kaycee\BepInEx\plugins\API_dev-API\InscryptionAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="InscryptionCommunityPatch">
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\kaycee\BepInEx\plugins\API_dev-API\InscryptionCommunityPatch.dll</HintPath>
+    </Reference>
+    <Reference Include="JSONLoader">
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\kaycee\BepInEx\plugins\JSONLoader\JSONLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>lib\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
